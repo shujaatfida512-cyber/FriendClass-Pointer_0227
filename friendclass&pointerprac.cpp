@@ -10,28 +10,33 @@ private:
     float sideA, sideB;
 
 public:
-    void inputData() {
+    void inputData() 
+    {
         cout << "Enter Kite Data\n";
         cout << "Diagonal 1: "; cin >> diagonal1;
         cout << "Diagonal 2: "; cin >> diagonal2;
         cout << "Side A: "; cin >> sideA;
         cout << "Side B: "; cin >> sideB;
     }
-     float calculateArea() const {
+     float calculateArea() const 
+     {
         return (diagonal1 * diagonal2) / 2;
-    }
+     }
 
-      float calculatePerimeter() const {
+      float calculatePerimeter() const 
+      {
         return 2 * (sideA + sideB);
-    }
-     void displayData() const {
+      }
+     void displayData() const 
+     {
         cout << "\n--- Kite ---\n";
         cout << "Area: " << calculateArea() << endl;
         cout << "Perimeter: " << calculatePerimeter() << endl;
-    }
+     }
         friend float totalPerimeter(Rhombus r, Kite k);
 };
-class Rhombus {
+class Rhombus 
+{
 private:
     float diagonal1, diagonal2;
     float side;
@@ -43,13 +48,16 @@ public:
         cout << "Diagonal 2: "; cin >> diagonal2;
         cout << "Side: "; cin >> side;
     }
-      float calculateArea() const {
+      float calculateArea() const 
+      {
         return (diagonal1 * diagonal2) / 2;
-    }
-    float calculatePerimeter() const {
+      }
+    float calculatePerimeter() const 
+    {
         return 4 * side;
     }
-      void displayData() const {
+      void displayData() const 
+    {
         cout << "\n--- Rhombus ---\n";
         cout << "Area: " << calculateArea() << endl;
         cout << "Perimeter: " << calculatePerimeter() << endl;
@@ -58,10 +66,12 @@ public:
     friend float totalPerimeter(Rhombus r, Kite k);
 };
 
-float totalPerimeter(Rhombus r, Kite k) {
+float totalPerimeter(Rhombus r, Kite k) 
+{
     return (4 * r.side) + (2 * (k.sideA + k.sideB));
 }
-int main() {
+int main() 
+{
     Kite kiteObject;
     Rhombus rhombusObject;
 
