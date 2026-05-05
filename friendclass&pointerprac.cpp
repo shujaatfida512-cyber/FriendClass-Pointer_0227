@@ -29,3 +29,5 @@ public:
         cout << "Area: " << calculateArea() << endl;
         cout << "Perimeter: " << calculatePerimeter() << endl;
     }
+        friend float totalPerimeter(Rhombus r, Kite k);
+};
