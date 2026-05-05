@@ -46,3 +46,6 @@ public:
       float calculateArea() const {
         return (diagonal1 * diagonal2) / 2;
     }
+    float calculatePerimeter() const {
+        return 4 * side;
+    }
