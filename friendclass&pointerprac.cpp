@@ -64,3 +64,9 @@ float totalPerimeter(Rhombus r, Kite k) {
 int main() {
     Kite kiteObject;
     Rhombus rhombusObject;
+
+    kiteObject.inputData();
+    rhombusObject.inputData();
+
+    kiteObject.displayData();
+    rhombusObject.displayData();
