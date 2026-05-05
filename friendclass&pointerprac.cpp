@@ -24,3 +24,8 @@ public:
       float calculatePerimeter() const {
         return 2 * (sideA + sideB);
     }
+     void displayData() const {
+        cout << "\n--- Kite ---\n";
+        cout << "Area: " << calculateArea() << endl;
+        cout << "Perimeter: " << calculatePerimeter() << endl;
+    }
