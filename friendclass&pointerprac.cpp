@@ -17,3 +17,6 @@ public:
         cout << "Side A: "; cin >> sideA;
         cout << "Side B: "; cin >> sideB;
     }
+     float calculateArea() const {
+        return (diagonal1 * diagonal2) / 2;
+    }
