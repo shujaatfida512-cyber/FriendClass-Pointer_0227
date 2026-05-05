@@ -49,3 +49,11 @@ public:
     float calculatePerimeter() const {
         return 4 * side;
     }
+      void displayData() const {
+        cout << "\n--- Rhombus ---\n";
+        cout << "Area: " << calculateArea() << endl;
+        cout << "Perimeter: " << calculatePerimeter() << endl;
+    }
+
+    friend float totalPerimeter(Rhombus r, Kite k);
+};
