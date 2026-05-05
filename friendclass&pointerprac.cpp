@@ -31,3 +31,15 @@ public:
     }
         friend float totalPerimeter(Rhombus r, Kite k);
 };
+class Rhombus {
+private:
+    float diagonal1, diagonal2;
+    float side;
+
+public:
+    void inputData() {
+        cout << "\nEnter Rhombus Data\n";
+        cout << "Diagonal 1: "; cin >> diagonal1;
+        cout << "Diagonal 2: "; cin >> diagonal2;
+        cout << "Side: "; cin >> side;
+    }
