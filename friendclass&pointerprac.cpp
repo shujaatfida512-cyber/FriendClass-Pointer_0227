@@ -70,3 +70,9 @@ int main() {
 
     kiteObject.displayData();
     rhombusObject.displayData();
+        
+    cout << "\nTotal Perimeter (Friend Function): "
+    << totalPerimeter(rhombusObject, kiteObject) << endl;
+
+    return 0;
+}
