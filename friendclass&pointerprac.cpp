@@ -57,3 +57,7 @@ public:
 
     friend float totalPerimeter(Rhombus r, Kite k);
 };
+
+float totalPerimeter(Rhombus r, Kite k) {
+    return (4 * r.side) + (2 * (k.sideA + k.sideB));
+}
